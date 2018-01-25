@@ -15,7 +15,7 @@ TEST_CASE("integral_constant", "[integral_constant]")
     REQUIRE(two_t() == 2);
 }
 
-TEST_CASE("bool_constant", "[bool_constant]")
+TEST_CASE("bool_constant", "[integral_constant]")
 {
     ctd::bool_constant<true> t;
     ctd::bool_constant<false> f;

@@ -1,3 +1,4 @@
 _add_test(integral_constant_test)
 _add_test(is_same_test)
+_add_test(is_reference_test)
 _add_test(remove_reference_test)

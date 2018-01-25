@@ -29,7 +29,7 @@ TEST_CASE("noncopyable", "[noncopyable]")
     REQUIRE(!std::is_move_assignable<ctd::noncopyable>::value );
 }
 
-TEST_CASE("copyable derived", "[copyable derived]")
+TEST_CASE("copyable derived", "[noncopyable]")
 {
     REQUIRE( std::is_constructible<CopyableSocket>::value );
     REQUIRE( std::is_copy_constructible<CopyableSocket>::value );
@@ -38,7 +38,7 @@ TEST_CASE("copyable derived", "[copyable derived]")
     REQUIRE( std::is_move_assignable<CopyableSocket>::value );
 }
 
-TEST_CASE("noncopyable derived", "[noncopyable derived]")
+TEST_CASE("noncopyable derived", "[noncopyable]")
 {
     REQUIRE( std::is_constructible<NonCopyableSocket>::value );
     REQUIRE(!std::is_copy_constructible<NonCopyableSocket>::value );

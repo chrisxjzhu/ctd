@@ -7,5 +7,6 @@ macro(_add_test name)
 endmacro()
 
 add_subdirectory(type_traits)
+add_subdirectory(utility)
 add_subdirectory(memory)
 add_subdirectory(ext)

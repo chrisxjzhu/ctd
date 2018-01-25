@@ -4,7 +4,7 @@
 namespace ctd {
 
 template<typename T>
-constexpr T* addressof(T& arg)
+constexpr T* addressof(T& arg) noexcept
 {
     return reinterpret_cast<T*>(&const_cast<char&>(reinterpret_cast<const volatile char&>(arg)));
 }
